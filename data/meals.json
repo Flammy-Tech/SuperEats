@@ -1,0 +1,28 @@
+{
+    "meals": [
+      {
+        "name": "Classic Burger",
+        "description": "A juicy beef patty with lettuce, tomato, onion, and special sauce on a toasted sesame seed bun.",
+        "price": 8,
+        "category": "Burgers",
+        "isVegetarian": false,
+        "isVegan": false,
+        "isGlutenFree": false,
+        "imageUrl": "../public/assets/images/pizza.jpg",
+        "videoUrl": "../public/assets/videos/pizza.mp4"
+      },
+
+      {
+        "name": "Classic Burger 2",
+        "description": "A juicy beef patty with lettuce, tomato, onion, and special sauce on a toasted sesame seed bun.",
+        "price": 8,
+        "category": "Burgers",
+        "isVegetarian": false,
+        "isVegan": false,
+        "isGlutenFree": false,
+        "imageUrl": "../public/assets/images/pizza.jpg",
+        "videoUrl": "../public/assets/videos/pizza.mp4"
+      }
+    ]
+  }
+  
