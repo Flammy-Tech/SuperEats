@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/common.css">
     <script src="../public/scripts/main.js" defer></script>
+    <script src="../public/scripts/tabs.js" defer></script>
     <title>Home</title>
 </head>
 <body>
@@ -27,13 +28,13 @@
 
     <section id="categories" class="categories">
         <ul>
-            <li class="active">Vegan</li>
-            <li>Vegeterian</li>
-            <li>Local</li>
-            <li>Special</li>
+            <li class="active" onclick="openTab('tab1')">Vegan</li>
+            <li onclick="openTab('tab2')">Vegeterian</li>
+            <li onclick="openTab('tab3')">Local</li>
+            <li onclick="openTab('tab4')">Special</li>
         </ul>
 
-        <div class="category">
+        <div class="category tab-content" id="tab1">
             <div class="category-img">
 
             </div>
@@ -43,6 +44,18 @@
 
             </div>
 
+        </div>
+
+        <div class="category tab-content" id="tab2">
+            Vegeterian
+        </div>
+
+        <div class="category tab-content" id="tab3">
+            Local
+        </div>
+
+        <div class="category tab-content" id="tab4">
+            Special
         </div>
 
     </section>
@@ -65,14 +78,14 @@
     
                 <div class="news-card">
                     <div class="news-img">
-                        <img src="../public/assets/images/people/maskot.png" alt="Chef Mungai's photo">
+                        <img src="../public/assets/images/people/chef2.jpg" alt="Chef Mungai's photo">
                     </div>
                     <div class="news-info">Chef Mungai</div>
                 </div>
 
                 <div class="news-card">
                     <div class="news-img">
-                        <img src="../public/assets/images/people/maskot.png" alt="Chef John's photo">
+                        <img src="../public/assets/images/people/chef1.jpg" alt="Chef John's photo">
                     </div>
                     <div class="news-info">Chef John</div>
                 </div>

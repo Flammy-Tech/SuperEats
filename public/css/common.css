@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
     font-family: sans-serif;
-    height: 100vh;
     background: #032a2a;
     animation: fadeIn 1s ease-in-out;
     transition: all 1s;
@@ -86,16 +86,19 @@ header .nav li:hover{
     align-items: center;   
     justify-content: center;
     text-align: center; 
-    transition: all 1.3s;
+    transition: all 1.3s linear;
     
 }
 
 
 .hero h1{
-    color: #055151;
+    color: #032a2a;
     margin-bottom: 0.5rem;
     font-size: 50px;
     font-weight: 900;
+    transition: all 0.7s ease-in-out;
+    animation: slideFromRight 0.7s ease-in-out;
+
 }
 
 .hero video{
@@ -127,6 +130,8 @@ header .nav li:hover{
 
 .categories{
     height: 100vh;
+    overflow: hidden;
+
 }
 
 .categories ul{
@@ -140,10 +145,15 @@ header .nav li:hover{
     text-transform: uppercase;
     font-weight: 400;
     cursor: pointer;
-    padding-bottom: .25rem;;
+    padding-bottom: .25rem;
+    transition: all 0.2s;
+    
 }
 
 
+.tab-content{
+    display: none;
+}
 
 .category{
     background-attachment: fixed;
@@ -152,10 +162,13 @@ header .nav li:hover{
     padding: 2%;
     display: flex;
     align-items: center;
+    animation: slide 0.5s ease-in-out;
+
+
 }
 
 .category-img{
-    background: url('../assets/images/tofu.jpg') no-repeat;
+    background: url('../assets/images/veegan.jpg') no-repeat;
     background-size: cover;
     height:80%;
     width:60%;
@@ -169,6 +182,7 @@ header .nav li:hover{
 
 .category-description{
     background-color: #333333d6;
+    margin-top: 2%;
     border-radius: .5rem;
     height: 70%;
     width: 70%;
@@ -177,6 +191,8 @@ header .nav li:hover{
     border: none;
     box-shadow: 5px 5px 5px #333333b2;
     overflow:auto;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -263,6 +279,7 @@ header .nav li:hover{
     width: 100%;
     height: 100%;
     display: flex;
+    animation: slide 0.5s ease-in-out;
 }
 
 
@@ -462,7 +479,195 @@ header .nav li:hover{
 }
 
 
+/* News Page */
+.dark-text{
+    color: #000;
+}
 
+.news-hero{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.news-hero-message{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25252530;
+
+}
+
+.news-hero-stuff{
+    display:flex;
+    flex-direction: column;
+    color:#fff;
+    animation: slideFromRight 0.5s ease-in-out;
+
+}
+
+.news-hero-img{
+    height: 100%;
+    width: 35%;
+    background-color: #032a2a;
+    background: url('../assets/images/chill.jpg') no-repeat;
+    background-size: cover;
+    animation: slide 0.5s ease-in-out;
+
+}
+
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: .5rem;
+    animation: slide 1s ease-in-out;
+
+}
+
+.blog-img{
+    height: 30rem;
+    width: 100%;
+    background-color: #032a2a;
+    background: url('../assets/images/HappyEatingBurger.jpg') no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+}
+
+.blog-article{
+    margin-top: .5rem;
+    padding: .5rem;
+}
+
+.blog-article p{
+    text-align: justify;
+}
+
+.blog-article-title{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: darkorange;
+}
+
+.blog-search-options{
+    padding: .5rem;
+    border-radius: .5rem;
+    height: 30rem;
+    width: 28%;
+    margin: 0 .5rem;
+}
+
+.article{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.blog form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .5rem;
+
+}
+
+.blog form input[type="text"]{
+    height: 4rem;
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: none;
+    background-color: #9c9898;
+    margin-bottom: .5rem;
+    font-weight: 700;
+
+}
+
+.blog form input[type="text"]::placeholder{
+    color: #032a2a;
+    font-weight: 700;
+}
+
+.blog-search-btn{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #032a2a;
+    color: darkorange;
+    border-radius: .5rem;
+}
+
+.blog-search-btn:hover{
+    opacity: 0.9;
+}
+
+.blog-info{
+    display: flex;
+    margin: .5rem;
+}
+
+.blog-info h5{
+    color:#fff;
+    margin-right: .5rem;
+    background-color: #032a2a;
+    padding: .3rem;
+    border-radius: .5rem;
+}
+
+/* .blog-info span{
+    background-color: #032a2a;
+    padding: .3rem;
+    border-radius: .5rem;
+} */
+
+.recent-blogs{
+    padding: .5rem;
+    height: 60%;
+    border-radius: .5rem;
+}
+
+
+.recent-blogs h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-blog{
+    height: 30%;
+    background-color: #032a2a;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    box-shadow: solid 1px #333;
+}
+
+.recent-blog-img{
+    width: 30%;
+    height: 100%;
+    background-color: #000;
+    border-radius: .5rem 0 0 .5rem;
+    background: url(../assets/images/fishStew.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+
+
+footer{
+    color: #fff;
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -481,6 +686,8 @@ header .nav li:hover{
 
     .category{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .category-img{
@@ -517,6 +724,53 @@ header .nav li:hover{
         width: 96%;
         margin-bottom: .5rem;
     }
+
+    .news-hero{
+        position: relative;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center;
+        text-align: center; 
+        height: 60vh;
+        flex-direction: column;
+    }
+
+    .news-hero-message{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;       
+
+    }
+    
+    .news-hero-img{
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .news-hero-img img{
+        position: absolute;
+        top: 0;
+        left:0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .article{
+        width: 100%;
+        border-bottom: solid 1px #333;
+
+    }
+    .blog-img{
+        width: 100%;
+    }
+
+    .blog-search-options{
+        width: 100%;
+        margin: 0;
+    }
     
 
 }
@@ -539,4 +793,14 @@ header .nav li:hover{
 @keyframes fadeIn{
     0% { opacity:0;}
     100% { opacity:1;}
+}
+
+@keyframes slide {
+    0% { transform: translateY(100%);}
+    100% { transform: translateY(0);}
+}
+
+@keyframes slideFromRight {
+    0% { transform: translateX(100%);}
+    100% { transform: translateX(0);}
 }
