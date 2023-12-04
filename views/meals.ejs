@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="icon" href="./assets/images/company/flammyTechLogo.png" type="image/png" >
+    <!-- <script src="./scripts/meals.js" defer></script> -->
+    <script src="./scripts/cart.js" defer></script>
+    <script src="./scripts/data.js" defer crossorigin="anonymous"></script>
+    <script src="./scripts/tabs.js" defer></script>
+
+    <title>Meals</title>
+</head>
+<body>
+    <header>
+        <h2><a href="/"><span class="white-text">Super</span><span class="orange-text">Eats</span> </a></h2>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/News">News</a></li>
+            <li id="cart-link">Basket</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
+    <section id="categories"" class="categories meal-categories">
+        <ul>
+            <li class="active" onclick="openTab('tab1')">Vegan</li>
+            <li onclick="openTab('tab2')" >Vegeterian</li>
+            <li onclick="openTab('tab3')">Local</li>
+            <li onclick="openTab('tab4')">Special</li>
+        </ul>
+
+        <div id="meals-container" class="meals-container">
+            <div id="tab1" class="tab-content meals"></div>
+            <div id="tab2" class="tab-content meals"></div>
+            <div id="tab3" class="tab-content meals"></div>
+            <div id="tab4" class="tab-content meals"></div>
+
+        </div>
+                
+        
+        
+    </section>
+
+
+
+    <!-- Cart Modal -->
+<dialog id="cart-modal" class="cart-modal">
+    <div class="modal-content">
+        <span id="close-cart-modal" class="close">&times;</span>
+        <h2 class="cart-title">Your Basket</h2>
+        <div id="cart-items-container">
+            <div class="cart-item-card">
+                <div class="cart-item-image">
+                </div>
+                <div class="cart-item-name"></div>
+                <div class="cart-item-description"></div>
+                <div class="cart-item-quantity">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</dialog>
+
+</body>
+</html>

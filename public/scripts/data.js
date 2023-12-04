@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const mealsList = document.getElementById('meals');
+    const mealsList = document.getElementById('meals-container');
         // Fetch meals from the JSON Server API
       fetch('http://localhost:3000/meals')
         .then(response => {
