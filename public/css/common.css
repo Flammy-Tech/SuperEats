@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -164,6 +166,7 @@ header .nav li:hover{
     padding: 2%;
     display: flex;
     align-items: center;
+    scroll-behavior: smooth;
     animation: slide 0.5s ease-in-out;
 
 
@@ -196,6 +199,40 @@ header .nav li:hover{
     display: flex;
     justify-content: center;
 }
+
+
+/* Vegeterian Section */
+
+.veggy-container-img{
+    background: url('../assets/images/vegeterian.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.veggy-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000003c;
+    backdrop-filter: blur(10px);
+}
+
+.veggy-description p{
+    font-size: 40px;
+
+}
+
+
+/* Local Section */
+.local-container-img{
+    background: url('../assets/images/pilau.jpg') no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
 
 
 /* News Section */
@@ -805,6 +842,16 @@ footer{
     .blog-search-options{
         width: 100%;
         margin: 0;
+    }
+
+
+    .veggy-description{
+        display: none;
+    }
+
+    .veggy-container-img{
+        height: 100%;
+        width: 95%;
     }
     
 
