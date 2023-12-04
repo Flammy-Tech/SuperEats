@@ -8,8 +8,8 @@
         "isVegetarian": false,
         "isVegan": false,
         "isGlutenFree": false,
-        "imageUrl": "../public/assets/images/pizza.jpg",
-        "videoUrl": "../public/assets/videos/pizza.mp4"
+        "imageUrl": "./assets/images/pizza.jpg",
+        "videoUrl": "./assets/videos/pizza.mp4"
       },
 
       {
@@ -20,8 +20,8 @@
         "isVegetarian": false,
         "isVegan": false,
         "isGlutenFree": false,
-        "imageUrl": "../public/assets/images/pizza.jpg",
-        "videoUrl": "../public/assets/videos/pizza.mp4"
+        "imageUrl": "./assets/images/pizza.jpg",
+        "videoUrl": "./assets/videos/pizza.mp4"
       }
     ]
   }

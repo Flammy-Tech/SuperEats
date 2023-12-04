@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mealsList = document.getElementById('meals-container');
         // Fetch meals from the JSON Server API
-      fetch('http://localhost:3000/meals')
+      fetch('http://localhost:5000/meals')
         .then(response => {
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
