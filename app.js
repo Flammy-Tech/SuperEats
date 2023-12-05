@@ -35,6 +35,19 @@ app.use('/about', aboutRouter);
 
 
 
-app.listen(port, ()=>{
-    console.log(`listening on port localhost ${port}`);
+app.listen(port, () => {
+    console.log(`
+        \x1b[35m╔═══════════════════════════════════════════════════════╗
+        ║               Server is running!                      ║
+        ║               listening on port localhost ${port}        ║
+        ║                                                       ║
+        ║   Available Routes:                                   ║
+        ║   - Home                                              ║
+        ║   - Meals                                             ║
+        ║   - News                                              ║
+        ║   - About                                             ║
+        ║   - Privacy                                           ║
+        ║                                                       ║
+        ╚═══════════════════════════════════════════════════════╝\x1b[0m
+    `);
 });

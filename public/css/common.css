@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -203,13 +203,17 @@ header .nav li:hover{
 
 /* Vegeterian Section */
 
+.veggy{
+    display: flex;
+}
+
 .veggy-container-img{
+    display: flex;
     background: url('../assets/images/vegeterian.jpeg') no-repeat;
     background-size: cover;
 }
 
 .veggy-description{
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0000003c;
@@ -218,7 +222,7 @@ header .nav li:hover{
 
 .veggy-description p{
     font-size: 40px;
-
+    font-family: 'Bungee Spice', sans-serif;
 }
 
 
@@ -226,6 +230,7 @@ header .nav li:hover{
 .local-container-img{
     background: url('../assets/images/pilau.jpg') no-repeat;
     background-size: cover;
+
 
 }
 
@@ -796,9 +801,10 @@ footer{
         
     }
     
-    /* .news-hero-stuff{
+    .news-hero-stuff{
+        animation: none;       
 
-    } */
+    }
 
     .news-hero-stuff h1{
         color: darkorange;
@@ -811,7 +817,6 @@ footer{
         font-style: italic;
         color: #032a2a;
         font-weight: 900;
-        
 
     }
     
