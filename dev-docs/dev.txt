@@ -49,3 +49,36 @@
             // You may want to reset the hero's height here if needed
         }
     });
+
+
+
+    data.js
+    ------------------------------------------------
+
+            const mealElement = document.createElement('div');
+        mealElement.classList.add('meal-card');
+        mealElement.innerHTML = `
+        <div class="meal-card-title">
+            <h2>${meal.name}</h2>
+        </div>
+        
+          
+          <img src="${meal.imageUrl}" alt="Meal Image" style="max-width: 200px;">
+
+          <video src="${meal.videoUrl}" autoplay loop muted></video>
+          
+        `;
+
+        
+        mealsList.innerHTML = `<div id="meal-card" class="meal-card"
+        <div class="meal-card-title">
+        <h2>${meal.name}</h2>
+    </div>
+    
+      
+      <img src="${meal.imageUrl}" alt="Meal Image" style="max-width: 200px;">
+
+      <video src="${meal.videoUrl}" autoplay loop muted></video>
+
+
+`;

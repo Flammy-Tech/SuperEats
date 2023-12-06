@@ -13,15 +13,15 @@
       },
 
       {
-        "name": "Classic Burger 2",
+        "name": "Tofu",
         "description": "A juicy beef patty with lettuce, tomato, onion, and special sauce on a toasted sesame seed bun.",
         "price": 8,
         "category": "Burgers",
         "isVegetarian": false,
         "isVegan": false,
         "isGlutenFree": false,
-        "imageUrl": "./assets/images/pizza.jpg",
-        "videoUrl": "./assets/videos/pizza.mp4"
+        "imageUrl": "./assets/images/tofu.jpg",
+        "videoUrl": "./assets/videos/tofu.mp4"
       }
     ]
   }

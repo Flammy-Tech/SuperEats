@@ -18,30 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
           console.error('Error fetching meals:', error);
         });
-    
   
-    function displayMeals(meals) {
-      // Clear previous content
-      mealsList.innerHTML = '';
-  
-      // Display each meal in the UI
-      meals.forEach(meal => {
-        const mealElement = document.createElement('div');
-        mealElement.classList.add('meal-card');
-        mealElement.innerHTML = `
-        <div class="meal-card-title">
-            <h2>${meal.name}</h2>
-        </div>
         
-          
-          <img src="${meal.imageUrl}" alt="Meal Image" style="max-width: 200px;">
-
-          <video src="${meal.videoUrl}" autoplay loop muted></video>
-          
-        `;
+        function displayMeals(meals) {
+          // Clear previous content
+          mealsList.innerHTML = '';
+        
+          // Display each meal in the UI
+          meals.forEach(meal => {
+            const mealElement = document.createElement('div');
+            mealElement.classList.add('meal-card');
+            
+            mealElement.innerHTML = `
+              <div class="meal-card-title">
+                <h2>${meal.name}</h2>
+              </div>
+              <img src="${meal.imageUrl}" alt="Meal Image" style="max-width: 200px;">
+              <video src="${meal.videoUrl}" autoplay loop muted></video>
+            `;
+            
+            mealsList.appendChild(mealElement);
+          });
+        }
+        
   
-        mealsList.appendChild(mealElement);
-      });
-    }
   });
+  
   

@@ -1,3 +1,4 @@
+
 function openTab(tabName) {
     // Hide all tabs
     const tabs = document.querySelectorAll('.tab-content');
@@ -18,4 +19,3 @@ function openTab(tabName) {
         }
     });
 }
-
