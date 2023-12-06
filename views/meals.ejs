@@ -36,10 +36,11 @@
         <div id="tab1" class="tab-content meals">
             <% meals.forEach(meal => { %>
                 <div class="meal-card">
-                    <img class="meal-card-image" src="<%= meal.imageUrl %>" alt="Meal Image" style="max-width: 200px;">
-                    <video class="meal-card-video" src="<%= meal.videoUrl %>" autoplay loop muted></video>
-                    <button type="submit" class="get-btn">Get</button>
-                    <button type="submit" class="price-btn">$ <%= meal.price %></button>button
+                    <div class="meal-id" style="max-width: 200px;"></div>
+                    <img id="meal-image" class="meal-card-image" src="<%= meal.imageUrl %>" alt="Meal Image" style="max-width: 200px;">
+                    <video id="meal-video" class="meal-card-video" src="<%= meal.videoUrl %>" autoplay loop muted></video>
+                    <button type="submit" id="get-btn" data-meal-id="<%= meal.mealId  %>" class="get-btn">Get</button>
+                    <button type="submit" id="price-btn" class="price-btn">$ <%= meal.price %></button>button
                     <div class="meal-card-title">
                         <h2><%= meal.name %></h2>
                     </div>
@@ -68,7 +69,7 @@
             <span id="close-cart-modal" class="close">&times;</span>
             <h2 class="cart-title">Your Basket</h2>
             <div id="cart-items-container">
-                <!-- Render your cart items here using EJS syntax -->
+                
             </div>
         </div>
     </dialog>
