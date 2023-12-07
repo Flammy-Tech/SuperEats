@@ -151,13 +151,17 @@ header .nav li:hover{
     font-weight: 400;
     cursor: pointer;
     padding-bottom: .25rem;
-    transition: all 0.2s;
+    transition: all 0.5s;
+    animation: slideFromRight 0.5s ease-in-out;
+
     
 }
 
 
 .tab-content{
     display: none;
+
+    
 }
 
 .category{
@@ -321,24 +325,31 @@ header .nav li:hover{
 
 /* ------------------------------MEALS PAGE------------------------------- */
 .meal-categories{
-    margin-top: 7rem;
+    margin-top: 5rem;
     padding: .5rem;
 }
 
 .meals-container{
-    margin-top: 1rem;
+    margin-top: .5rem;
     width: 100%;
     height: 100%;
-    display: flex;
     animation: slide 0.5s ease-in-out;
+    overflow: scroll;
+
 }
 
 .meals{
-    margin-top: 1rem;;
     width: 100%;
     height: 100%;
-    display: flex;
+    flex-wrap: wrap;
     animation: slide 0.5s ease-in-out;
+    transition: all 0.5s;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
 }
 
 
@@ -354,6 +365,8 @@ header .nav li:hover{
     cursor: pointer;
     backdrop-filter: blur(10px);
     overflow: hidden;
+    transition: all 1s;
+    margin-bottom: 0;
 
 }
 
@@ -374,7 +387,7 @@ header .nav li:hover{
     background-color: rgba(0, 0, 0, 0.7);
     font-weight: 700;
     border-radius: .5rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: darkorange;
     backdrop-filter: blur(5px);
     padding: .5rem;
@@ -489,11 +502,13 @@ position: relative;
     background-color: transparent;
     border-radius: 0.5rem;
     outline: none;
+    transition: all 1s;
 }
 
 .cart-title {
     color: darkorange;
     font-weight:bolder;
+    margin-bottom: .5rem;
 }
 
 .modal-content {
@@ -796,8 +811,13 @@ footer{
 
 @media (max-width: 768px) {
 
+    body, html{
+        animation: none;
+    }
+
     .hero{
         background-attachment: scroll;
+        height: 95vh !important;
     }
     .categories ul li{
         font-size: 13px;
@@ -827,6 +847,8 @@ footer{
 
     .news-card-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .news-card{
         width: 90%;
@@ -839,13 +861,15 @@ footer{
 
     .meals{
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .meal-card{
         width: 96%;
+        height: 40%;
         margin-bottom: .5rem;
     }
-
+    
     .news-hero{
         position: relative;
         flex-direction: column;
@@ -921,7 +945,36 @@ footer{
         height: 100%;
         width: 95%;
     }
+
+    .cart-modal {
+        width: 95%;
+        height: 95%;
+    }
     
+    .cart-item-description{
+        display: none;
+    }
+
+    .cart-item-image{
+        width: 30%;
+    }
+
+    .cart-item-name{
+        width: 40%;
+    }
+
+    .cart-item-quantity{
+        width: 30%;
+    }
+
+    .meals-container{
+        animation: none !important;
+    }
+
+    .meals{
+        animation: none !important;
+    }
+
 
 }
 
@@ -937,6 +990,13 @@ footer{
     background-color: darkorange;
 }
 
+/* .meals-container::-webkit-scrollbar{
+    display: none !important;
+} */
+
+.meals-body::-webkit-scrollbar{
+    display: none !important;
+}
 
 
 /* Animations */
@@ -953,4 +1013,9 @@ footer{
 @keyframes slideFromRight {
     0% { transform: translateX(100%);}
     100% { transform: translateX(0);}
+}
+
+@keyframes slideToBottom {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(100%);}
 }
