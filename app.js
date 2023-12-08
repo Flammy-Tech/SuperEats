@@ -24,6 +24,7 @@ const homeRouter = require('./routes/home');
 const mealsRouter = require('./routes/meals');
 const newsRouter = require('./routes/news');
 const aboutRouter = require('./routes/about');
+const errorRouter = require('./routes/error');
 
 
 
@@ -31,6 +32,7 @@ app.use('/', homeRouter);
 app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);
 app.use('/about', aboutRouter);
+app.use('/error', errorRouter);
 
 
 

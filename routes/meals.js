@@ -14,8 +14,8 @@ router.get('/', async (req, res) => {
     const meals = await response.json();
     res.render('meals', { meals });
   } catch (error) {
-    console.error('Error fetching meals:', error);
-    res.status(500).send('Error fetching meals');
+    // console.error('Error fetching meals:', error);
+    res.status(500).redirect('error');
   }
 });
 
