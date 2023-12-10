@@ -866,7 +866,7 @@ footer{
     border-radius: .5rem;
     margin-bottom: 1rem;
     font-weight: 500;
-
+    cursor: pointer;
 }
 
 .error-status-links button:hover{
@@ -885,7 +885,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 10%;
     animation: slideFromRight 0.5s ease-in-out;
 
 }
@@ -896,6 +896,104 @@ footer{
     color: darkorange;
 
 }
+
+.red-text{
+    color: red;
+    margin: 0 .5rem;
+    font-weight: 900;
+}
+
+
+/* Credentials Page */
+.credentials-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: url('../assets/images/food-home-background.jpg') no-repeat;
+    background-size: cover; */
+}
+
+.credentials-container h2{
+    color: darkorange;
+    margin-bottom: .5rem;
+}
+
+.credentials{
+    height: 70%;
+    width: 60%;
+    background-color: #33333351;
+    border-radius: .5rem;
+    padding: .5rem;
+    backdrop-filter: blur(10px);
+
+}
+
+.credentials-external-service-container{
+    height: 19%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.credentials-external{
+    padding: .5rem;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    border: none;
+
+}
+
+.credentials form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    /* height: 81%; */
+}
+
+.credentials form label{
+    color: #fff;
+    margin-bottom: .2rem;
+    text-align: right;
+
+}
+
+.credentials form a{
+    color: darkorange;
+    border-bottom: solid 1px darkorange;
+}
+
+.credentials form input[type="text"], input[type="password"]{
+    height: 5rem;
+    width: 80%;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    border: none;
+    font-size: 1.7rem;
+    padding: 1rem;
+    background-color: #333;
+}
+
+
+.credentials form input[type="submit"]{
+    width: 80%;
+    height: 3rem;
+    border: none;
+    background-color: #032a2a;
+    color: darkorange;
+    border-radius: .5rem;
+    margin-bottom: .3rem;
+}
+
 
 /* Media queries */
 
@@ -1080,6 +1178,22 @@ footer{
         width: 100%;
         display: none;
         animation: none;
+    }
+
+    .credentials{
+        height: 70%;
+        width: 90%;
+    }
+    .credentials form{
+        margin-top: .5rem;
+    }
+
+    .credentials form input[type="text"], input[type="password"]{
+        width: 100%;
+    }
+
+    .credentials form input[type="submit"]{
+        width: 100%;
     }
 
 }

@@ -21,18 +21,22 @@ app.use('assets', express.static(__dirname + 'public/assets'));
 //Setup routes
 
 const homeRouter = require('./routes/home');
+const credentialsRouter = require('./routes/credentials');
 const mealsRouter = require('./routes/meals');
 const newsRouter = require('./routes/news');
 const aboutRouter = require('./routes/about');
 const errorRouter = require('./routes/error');
+const recoverRouter = require('./routes/recover');
 
 
 
 app.use('/', homeRouter);
+app.use('/credentials', credentialsRouter);
 app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);
 app.use('/about', aboutRouter);
 app.use('/error', errorRouter);
+app.use('/recover', recoverRouter);
 
 
 
