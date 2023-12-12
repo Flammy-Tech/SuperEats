@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             getFoodButton.addEventListener('click', () => {
                 const mealId = parseInt(getFoodButton.dataset.mealId);
                 const foodName = cardContainer.querySelector('.meal-card-title h2').textContent;
-                const foodPrice = "YourPriceCalculationLogicHere"; // Modify this based on how you calculate the price
+                const foodPrice = cardContainer.querySelector('.price-btn').textContent;
                 const foodDescription = cardContainer.querySelector('.meal-card-description p').textContent;
                 const foodImage = cardContainer.querySelector('.meal-card-image').src;
                 const foodVideo = cardContainer.querySelector('.meal-card-video').src;
@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     const foodCard = {
                         mealId: mealId,
                         name: foodName,
-                        price: foodPrice,
+                        quantity: 1,
+                        price: foodPrice ,
                         foodDescription: foodDescription,
                         foodImage: foodImage,
-                        foodVideo: foodVideo,
-                        quantity: 1
+                        foodVideo: foodVideo
                     };
                     cartItems.push(foodCard);
                 }
@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div class="cart-item-name">${item.name}</div>
                     <div class="cart-item-description">${item.foodDescription}</div>
+                    <div class="cart-item-price">${item.price}</div>
                     <div class="cart-item-quantity">${item.quantity}</div>`;
 
                 cartItemsContainer.appendChild(cartItemElement);
@@ -84,3 +85,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+
+
+//Convert to int
+// price: parseInt(foodPrice.replace(/\D/g, ' ')) ,
