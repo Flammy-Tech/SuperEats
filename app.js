@@ -27,6 +27,7 @@ const newsRouter = require('./routes/news');
 const aboutRouter = require('./routes/about');
 const errorRouter = require('./routes/error');
 const recoverRouter = require('./routes/recover');
+const tapRouter = require('./routes/tap');
 
 
 
@@ -37,6 +38,7 @@ app.use('/news', newsRouter);
 app.use('/about', aboutRouter);
 app.use('/error', errorRouter);
 app.use('/recover', recoverRouter);
+app.use('/tap', tapRouter);
 
 
 

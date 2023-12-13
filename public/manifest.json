@@ -1,0 +1,17 @@
+{
+    "name": "Super Eats",
+    "short_name": "App",
+    "description": "Order food to your door",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "./assets/images/company/flammyTechLogo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
