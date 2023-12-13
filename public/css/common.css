@@ -888,6 +888,8 @@ footer{
     margin-bottom: 1rem;
     font-weight: 500;
     cursor: pointer;
+    animation: slide 0.5s ease-in-out;
+
 }
 
 .error-status-links button:hover{
@@ -898,6 +900,8 @@ footer{
     background-color: #fff;
     color: #032a2a;
     font-weight: 800;
+
+
 }
 
 .error-quote{
