@@ -342,7 +342,7 @@ header .nav li:hover{
     height: fit-content;
     flex-wrap: wrap;
     animation: slide 0.5s ease-in-out;
-    transition: all 0.5s;
+    transition: all 1s;
     margin-bottom: 3rem;
     justify-content: center;
     align-items: center;
@@ -363,8 +363,7 @@ header .nav li:hover{
     border-radius: 0.5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
-    overflow: hidden;
-    transition: all 1s;
+    transition: all 0.4s;
     margin-bottom: 0;
     overflow: hidden;
 

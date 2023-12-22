@@ -1,6 +1,6 @@
 {
-    "name": "Super Eats",
-    "short_name": "App",
+    "name": "SuperEats",
+    "short_name": "SuperEats",
     "description": "Order food to your door",
     "start_url": "/",
     "display": "standalone",

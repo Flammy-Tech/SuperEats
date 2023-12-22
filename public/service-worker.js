@@ -4,9 +4,17 @@ const filesToCache = [
   '/',
   '/index.html',
   './assets/css/common.css',
-//   '/path/to/your/scripts.js',
-  './assets/images/company/flammyTechLogo.png'
-  // Add other static assets
+  './assets/js/assetswap.js',
+  './assets/js/cart.js',
+  './assets/js/data.js',
+  './assets/js/main.js',
+  './assets/js/meals.js',
+  './assets/js/mealsTab.js',
+  './assets/js/news.js',
+  './assets/js/tabs.js',
+  './assets/images/company/flammyTechLogo.png',
+  './assets/images/icons/cart.png',
+  './assets/images/icons/run.png'
 ];
 
 self.addEventListener('install', event => {
